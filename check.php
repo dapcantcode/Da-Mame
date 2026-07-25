@@ -9,7 +9,6 @@ $result = $conn->query($sql);
 
 if($result->num_rows > 0)
 {
-    // Customer exists
     echo '
     <form action="login.php" method="post">
         <input type="hidden" name="whatsapp" value="'.$whatsapp.'">
@@ -22,7 +21,7 @@ if($result->num_rows > 0)
 }
 else
 {
-    // New customer
+    
     echo '
     <form action="register.php" method="post">
         <input type="hidden" name="whatsapp" value="'.$whatsapp.'">
