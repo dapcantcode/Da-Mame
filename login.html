@@ -6,16 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-   <form action="check.php" method="post">
+<form action="check.php" method="post">
     <table>
         <tr>
-            <th>Please Enter Your WhatsApp Number:</th>
-            <td><input type="tel" name="whatsapp" required placeholder="Ex: +91 8345603345"></td>
+            <td>Please Enter Your WhatsApp Number:</td>
+            <td>+91</td>
+            <td>
+                <input type="tel"
+                       name="whatsapp"
+                       maxlength="10"
+                       pattern="[0-9]{10}"
+                       required
+                       placeholder="Ex: 8345603345">
+            </td>
         </tr>
+
         <tr>
-            <td colspan="2"><input type="submit" value="Continue"></td>
+            <td colspan="3" align="center">
+                <input type="submit" value="Continue">
+            </td>
         </tr>
     </table>
-</form>
+</form>   
 </body>
 </html>
