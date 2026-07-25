@@ -1,6 +1,6 @@
 <?php
 
-$whatsapp = $_POST['whatsapp'];
+$whatsapp = $_POST['whatsapp'] ?? '';
 
 $conn = new mysqli("localhost","root","Dapbor123#","damame");
 
